@@ -22,7 +22,7 @@ mutual
       → (p : D (n + 11))
       → D (mc91bc (n + 11) p)
       → D n
-    
+
   mc91bc : (n : Nat) → D n → Nat
   mc91bc n (base .n x)     = n - 11
   mc91bc n (nest .n x p q) = mc91bc (mc91bc (n + 11) p) q
@@ -37,6 +37,3 @@ data Mc91 : Nat → Nat → Set where
     → Mc91 (n + 11) m
     → Mc91 m r
     → Mc91 n r
-
-  
-    

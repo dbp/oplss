@@ -51,8 +51,8 @@ mutual
     succEvenP : (m : Nat) → EvenP m → OddP (succ m)
 
 -- a decidable predicate ("a Boolean is a bit uninformative")
+open import IType.Bool
 
 evenP : Nat → Bool
 evenP zero = true
 evenP (succ m) = ¬ (evenP m)
-

@@ -14,8 +14,8 @@ not false = true
 
 -- In Agda we have unicode and can for example write → for -> and ¬ for not:
 
--- ¬ : Bool → Bool
--- ¬ = not
+¬ : Bool → Bool
+¬ = not
 
 -- The names of unicode characters used by Agda are often the same as the names used in latex.
 

@@ -1,1 +1,3 @@
-.agdai
+*.agdai
+.cabal-sandbox
+nuprl2015-lite.ova

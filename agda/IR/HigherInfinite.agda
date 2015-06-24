@@ -48,7 +48,7 @@ mutual
 postulate
   f : (A : Set) → (B : A → Set) → Set
   g : (A : Set) → (B : A → Set) → f A B → Set
-   
+
 mutual
   data MahloU : Set where
     f-code : (a : MahloU) → (MahloT a → MahloU)
@@ -61,5 +61,3 @@ mutual
   MahloT : MahloU → Set
   MahloT (f-code a b)   = f (MahloT a) (λ x → MahloT (b x))
   MahloT (g-code a b c) = g (MahloT a) (λ x → MahloT (b x)) c
-
-
